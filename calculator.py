@@ -29,8 +29,6 @@ def exponent(a, b):
     return a ** b
 
 
-# Shortened function names from the updated assignment
-
 def sub(a, b):
     return subtract(a, b)
 
@@ -49,3 +47,13 @@ def log(a, b):
 
 def exp(a, b):
     return exponent(a, b)
+
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot calculate square root of a negative number")
+    return math.sqrt(a)
